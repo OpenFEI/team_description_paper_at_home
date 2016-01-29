@@ -9,6 +9,6 @@ clean:
 
 text:
 	"/Library/TeX/texbin/pdflatex" -synctex=1 -interaction=nonstopmode $(NAME).tex
-	"/Library/TeX/texbin/bibtex" $(NAME).aux
+	#"/Library/TeX/texbin/bibtex" $(NAME).aux
 	"/Library/TeX/texbin/pdflatex" -synctex=1 -interaction=nonstopmode $(NAME).tex
 	"/Library/TeX/texbin/pdflatex" -synctex=1 -interaction=nonstopmode $(NAME).tex
