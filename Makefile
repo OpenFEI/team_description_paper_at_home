@@ -13,3 +13,9 @@ text:
 	"/Library/TeX/texbin/bibtex" $(NAME).aux
 	"/Library/TeX/texbin/pdflatex" -synctex=1 -interaction=nonstopmode $(NAME).tex
 	"/Library/TeX/texbin/pdflatex" -synctex=1 -interaction=nonstopmode $(NAME).tex
+
+	# Works on Yosemite and earlier and Linux
+	# "/usr/texbin/pdflatex" -synctex=1 -interaction=nonstopmode $(NAME).tex
+	# "/usr/texbin/bibtex" $(NAME).aux
+	# "/usr/texbin/pdflatex" -synctex=1 -interaction=nonstopmode $(NAME).tex
+	# "/usr/texbin/pdflatex" -synctex=1 -interaction=nonstopmode $(NAME).tex
